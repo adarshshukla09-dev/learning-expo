@@ -1,9 +1,6 @@
-import DataSelector from "@/components/DataSelector";
-import Header from "@/components/Header";
-import TasksCard from "@/components/TasksCard";
-import { TASKS } from "@/constants/tasks";
+import ColorChanging from "@/components/ColorChanging";
 import React from "react";
-import { FlatList, StatusBar, StyleSheet, Text, View } from "react-native";
+import { StatusBar, StyleSheet, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 const index = () => {
   const insets = useSafeAreaInsets();
@@ -11,7 +8,9 @@ const index = () => {
     <View style={[styles.container, { paddingTop: insets.top }]}>
       {/* Set barStyle to light-content for the black background */}
       <StatusBar barStyle="light-content" backgroundColor="#000" />
-
+      {/* <Weather /> */}
+      <ColorChanging />
+      {/* 
       <FlatList
         data={TASKS}
         keyExtractor={(item) => item.id}
@@ -28,7 +27,7 @@ const index = () => {
         }
         contentContainerStyle={styles.list}
         showsVerticalScrollIndicator={false}
-      />
+      /> */}
     </View>
   );
 };
