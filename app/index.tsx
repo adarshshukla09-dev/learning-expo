@@ -1,4 +1,4 @@
-import ColorChanging from "@/components/ColorChanging";
+import CurrencyConverter from "@/components/CurrencyConverter";
 import React from "react";
 import { StatusBar, StyleSheet, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -9,7 +9,7 @@ const index = () => {
       {/* Set barStyle to light-content for the black background */}
       <StatusBar barStyle="light-content" backgroundColor="#000" />
       {/* <Weather /> */}
-      <ColorChanging />
+      <CurrencyConverter />
       {/* 
       <FlatList
         data={TASKS}
